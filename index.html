@@ -26,13 +26,20 @@
 
   <section class="main-content">
     <h1 id="">
-      <center>SynthVC: Leveraging Synthetic Data for End-to-End Low Latency Streaming Voice Conversion</center>
+      <center>DualDub: Video-to-Soundtrack Generation via Joint Speech and Background Audio Synthesis</center>
     </h1>
 
     <br><br>
     <h2 id="abstract" style="text-align: center;">Abstract<a name="abstract"></a></h2>
-    <p style="text-align: justify;">Voice Conversion (VC) modifies a speaker's timbre while preserving linguistic content. While showing effectiveness in speaker similarity and robustness, most existing VC models face challenges in real-time scenarios which require low-latency streaming capabilities. Streaming VC models typically use automatic speech recognition (ASR) models to extract linguistic content or rely on speaker representation disentanglement (SRD) techniques. However, these methods often suffer from timbre leakage, high computational latency, and compromised speech naturalness. To address these limitations, we present SynthVC, a streaming end-to-end voice conversion framework that establishes direct timbre mapping between source and target speakers. Our method eliminates the reliance on complex disentanglement design through the utilization of synthetic parallel training data. Experimental results demonstrate that SynthVC achieves low latency and outperforms existing systems in both naturalness and speaker similarity. To facilitate reproducibility and community advancement, we will release the complete implementation code and pre-trained models upon publication.</p>
-
+    <p style="text-align: justify;">Voice Conversion (VC) modifies a speaker's timbre while preserving linguistic content. While showing effectiveness in speaker similarity and robustness, most existing VC models face challenges in real-time scenarios which require low-latency streaming capabilities. Streaming VC models typically use automatic speech recognition (ASR) models to extract linguistic content or rely on speaker representation disentanglement (SRD) techniques. However, these methods often suffer from timbre leakage, high computational latency, and compromised speech naturalness. To address these limitations, we present SynthVC, a streaming end-to-end voice conversion framework that establishes direct timbre mapping between source and target speakers. Our method eliminates the reliance on complex disentanglement design through the utilization of synthetic parallel training data. Experimental results demonstrate that SynthVC achieves low latency and outperforms existing systems in both naturalness and speaker similarity. To facilitate reproducibility and community advancement, we will release the complete impl</p>
+    <p style="text-align: justify;">
+      While recent video-to-audio (V2A) models can generate realistic background sounds from visual input, they largely overlook speech, an essential part of many video soundtracks. 
+      This paper proposes a new task, video-to-soundtrack (V2ST) generation, which aims to jointly generate both background audio and speech in a unified framework.
+      To tackle V2ST, we introduce DualDub, a unified framework built on a multimodal large language model, which integrates a multimodal alignment module, multimodal encoders, and dual decoding heads for simultaneous background audio and speech generation.
+      To handle data scarcity, we design a curriculum learning strategy that progressively builds the multi-modal capability. 
+      We also propose a cross-modal alignment module with causal and non-causal attention to improve synchronization and acoustic harmony. Finally, we introduce DualBench, the first benchmark for V2ST evaluation with a carefully curated test set and comprehensive metrics. 
+      Experiments show that DualDub achieves state-of-the-art performance in generating coherent and synchronized soundtracks that include both speech and environmental sound.
+    </p>
     <table frame=void rules=none>
       <tr>
         <center><img src='raw/fig/SynthVC.png'></center>
