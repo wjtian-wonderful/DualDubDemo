@@ -31,7 +31,7 @@
 
     <br><br>
     <h2 id="abstract" style="text-align: center;">Abstract<a name="abstract"></a></h2>
-    <p style="text-align: justify;">Voice Conversion (VC) modifies a speaker's timbre while preserving linguistic content. While showing effectiveness in speaker similarity and robustness, most existing VC models face challenges in real-time scenarios which require low-latency streaming capabilities. Streaming VC models typically use automatic speech recognition (ASR) models to extract linguistic content or rely on speaker representation disentanglement (SRD) techniques. However, these methods often suffer from timbre leakage, high computational latency, and compromised speech naturalness. To address these limitations, we present SynthVC, a streaming end-to-end voice conversion framework that establishes direct timbre mapping between source and target speakers. Our method eliminates the reliance on complex disentanglement design through the utilization of synthetic parallel training data. Experimental results demonstrate that SynthVC achieves low latency and outperforms existing systems in both naturalness and speaker similarity. To facilitate reproducibility and community advancement, we will release the complete impl</p>
+    <p style="text-align: justify;">DualDub: Video-to-Soundtrack Generation via Joint Speech and Background Audio Synthesis</p>
     <p style="text-align: justify;">
       While recent video-to-audio (V2A) models can generate realistic background audio from visual input, they largely overlook speech, an essential part of many video soundtracks.
       This paper proposes a new task, video-to-soundtrack (V2ST) generation, which aims to jointly produce synchronized background audio and speech within a unified framework.
@@ -90,76 +90,76 @@
         <th>reference speaker</th>
         <th>video</th>
         <th>MMAudio+speaker2dubber</th>
-        <th>Diffoly+style2dubber</th>
+        <!-- <th>Diffoly+style2dubber</th>-->
         <th>DualDub</th>
       </tr>
 
      <tr>
         <td>Example text content</td>
-        <td><audio controls src="raw/samples/comparsion/groundtruth_speech/AIMcW-00-0583.wav"></audio></td>
+        <td><audio controls style="width: 200px;"  src="raw/samples/comparsion/groundtruth_speech/AIMcW-00-0583.wav"></audio></td>
         <td><video controls width="200" src="raw/samples/comparsion/video/AIMcW-00-0583.mp4"></video></td>
         <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/AIMcW-00-0583.mp4"></video></td>
-        <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td>
+        <!-- <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td> -->
         <td><video controls width="200" src="raw/samples/V2S/AIMcW-00-0583-dualdub.mp4"></video></td>
       </tr> 
 
 
            <tr>
         <td>Example text content</td>
-        <td><audio controls src="raw/samples/comparsion/groundtruth_speech/Anna-00-1036.wav"></audio></td>
+        <td><audio controls style="width: 200px;" src="raw/samples/comparsion/groundtruth_speech/Anna-00-1036.wav"></audio></td>
         <td><video controls width="200" src="raw/samples/comparsion/video/Anna-00-1036.mp4"></video></td>
         <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/Anna-00-1036.mp4"></video></td>
-        <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td>
+        <!-- <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td>-->
         <td><video controls width="200" src="raw/samples/V2SA/disney/Anna-00-1036-dualdub.mp4"></video></td>
       </tr> 
 
 
            <tr>
         <td>Example text content</td>
-        <td><audio controls src="raw/samples/comparsion/groundtruth_speech/AstridHofferson-00-0680.wav"></audio></td>
+        <td><audio controls style="width: 200px;" src="raw/samples/comparsion/groundtruth_speech/AstridHofferson-00-0680.wav"></audio></td>
         <td><video controls width="200" src="raw/samples/comparsion/video/AstridHofferson-00-0680.mp4"></video></td>
         <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/AstridHofferson-00-0680.mp4"></video></td>
-        <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td>
+        <!-- <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/AstridHofferson-00-0680.mp4"></video></td>
         <td><video controls width="200" src="raw/samples/V2SA/ragon/AstridHofferson-00-0680-dualdub.mp4"></video></td>
       </tr> 
 
 
            <tr>
         <td>Example text content</td>
-        <td><audio controls src="raw/samples/comparsion/groundtruth_speech/Bill-00-1575.wav"></audio></td>
+        <td><audio controls style="width: 200px;" src="raw/samples/comparsion/groundtruth_speech/Bill-00-1575.wav"></audio></td>
         <td><video controls width="200" src="raw/samples/comparsion/video/Bill-00-1575.mp4"></video></td>
         <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/Bill-00-1575.mp4"></video></td>
-        <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td>
+        <!-- <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td>-->
         <td><video controls width="200" src="raw/samples/V2A/raw/samples/V2S/Bill-00-1575-dualdub.mp4"></video></td>
       </tr> 
 
 
            <tr>
         <td>Example text content</td>
-        <td><audio controls src="raw/samples/comparsion/groundtruth_speech/Bob-00-1059.wav"></audio></td>
+        <td><audio controls style="width: 200px;" src="raw/samples/comparsion/groundtruth_speech/Bob-00-1059.wav"></audio></td>
         <td><video controls width="200" src="raw/samples/comparsion/video/Bob-00-1059.mp4"></video></td>
         <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/Bob-00-1059.mp4"></video></td>
-        <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td>
+        <!-- <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td>-->
         <td><video controls width="200" src="raw/samples/V2A/raw/samples/V2A/Bob-00-1059-dualdub.mp4"></video></td>
       </tr> 
 
 
-                 <tr>
+      <tr>
         <td>Example text content</td>
-        <td><audio controls src="raw/samples/comparsion/groundtruth_speech/BossBaby-00-0224.wav"></audio></td>
+        <td><<audio controls style="width: 200px;" src="raw/samples/comparsion/groundtruth_speech/BossBaby-00-0224.wav"></audio></td>
         <td><video controls width="200" src="raw/samples/comparsion/video/BossBaby-00-0224.mp4"></video></td>
         <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/BossBaby-00-0224.mp4"></video></td>
-        <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td>
+        <!-- <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td>-->
         <td><video controls width="200" src="raw/samples/V2SA/bossboy/BossBaby-00-0224-dualdub.mp4"></video></td>
       </tr> 
 
 
-                 <tr>
+      <tr>
         <td>Example text content</td>
-        <td><audio controls src="raw/samples/comparsion/groundtruth_speech/Elsa-00-0985.wav"></audio></td>
+        <td><audio controls style="width: 200px;" src="raw/samples/comparsion/groundtruth_speech/Elsa-00-0985.wav"></audio></td>
         <td><video controls width="200" src="raw/samples/comparsion/video/Elsa-00-0985.mp4"></video></td>
         <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/Elsa-00-0985.mp4"></video></td>
-        <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td>
+        <!-- <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td>-->
         <td><video controls width="200" src="raw/samples/V2SA/ice-queen/Elsa-00-0985-dualdub.mp4"></video></td>
       </tr> 
     `;
@@ -255,7 +255,7 @@
       </tr> 
     `;
       
-    document.getElementById('v2a-body').innerHTML = sample_data
+    // document.getElementById('v2a-body').innerHTML = sample_data
 
 
 
@@ -340,7 +340,7 @@
       </tr> 
     `;
       
-    document.getElementById('v2s-body').innerHTML = sample_data
+    // document.getElementById('v2s-body').innerHTML = sample_data
 
   }
 </script>
