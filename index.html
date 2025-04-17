@@ -56,8 +56,8 @@
     <h2 style="text-align: center;">Video to Audio Speech<a name="Comparison"></a></h2>
 
     <!-- <table style="display: flex; justify-content: center;"> -->
-    <table style="width: 1200px; table-layout: fixed; border-collapse: collapse;" border="1">
-
+    <!-- <table style="width: 1200px; table-layout: fixed; border-collapse: collapse;" border="1"> -->
+    <table style="display: flex; justify-content: center;">
       <tbody id="v2as-body">
       </tbody>
     </table> 
@@ -86,11 +86,11 @@
    
     sample_data =`
       <tr>
-        <th>text</th>
-        <th>reference speaker</th>
-        <th>video</th>
-        <th>MMAudio+speaker2dubber</th>
-        <!-- <th>Diffoly+style2dubber</th>-->
+        <th>Text</th>
+        <th>Reference Speaker</th>
+        <th>Ground Truth Video</th>
+        <th>MMAudio+Speaker2dubber</th>
+        <!-- <th>Diffoly+Style2dubber</th>-->
         <th>DualDub</th>
       </tr>
 
@@ -109,7 +109,7 @@
         <td><audio controls style="width: 200px;" src="raw/samples/comparsion/groundtruth_speech/Anna-00-1036.wav"></audio></td>
         <td><video controls width="200" src="raw/samples/comparsion/video/Anna-00-1036.mp4"></video></td>
         <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/Anna-00-1036.mp4"></video></td>
-        <!-- <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td>-->
+        <!-- <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td> -->
         <td><video controls width="200" src="raw/samples/V2SA/disney/Anna-00-1036-dualdub.mp4"></video></td>
       </tr> 
 
@@ -119,21 +119,21 @@
         <td><audio controls style="width: 200px;" src="raw/samples/comparsion/groundtruth_speech/AstridHofferson-00-0680.wav"></audio></td>
         <td><video controls width="200" src="raw/samples/comparsion/video/AstridHofferson-00-0680.mp4"></video></td>
         <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/AstridHofferson-00-0680.mp4"></video></td>
-        <!-- <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/AstridHofferson-00-0680.mp4"></video></td>
+        <!-- <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/AstridHofferson-00-0680.mp4"></video></td> -->
         <td><video controls width="200" src="raw/samples/V2SA/ragon/AstridHofferson-00-0680-dualdub.mp4"></video></td>
       </tr> 
 
-
-           <tr>
+      <!--
+      <tr>  
         <td>Are you kidding I'm not missing one</td>
         <td><audio controls style="width: 200px;" src="raw/samples/comparsion/groundtruth_speech/Bill-00-1575.wav"></audio></td>
         <td><video controls width="200" src="raw/samples/comparsion/video/Bill-00-1575.mp4"></video></td>
         <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/Bill-00-1575.mp4"></video></td>
-        <!-- <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td>-->
+        <!-- <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td> -->
         <td><video controls width="200" src="raw/samples/V2A/raw/samples/V2S/Bill-00-1575-dualdub.mp4"></video></td>
       </tr> 
-
-
+      -->
+      <!--
            <tr>
         <td>Ready Violet</td>
         <td><audio controls style="width: 200px;" src="raw/samples/comparsion/groundtruth_speech/Bob-00-1059.wav"></audio></td>
@@ -142,15 +142,15 @@
         <!-- <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td>-->
         <td><video controls width="200" src="raw/samples/V2A/raw/samples/V2A/Bob-00-1059-dualdub.mp4"></video></td>
       </tr> 
-
+      -->
 
       <tr>
         <td>With your track record</td>
-        <td><audio controls style="width: 200px;" src="raw/samples/comparsion/groundtruth_speech/BossBaby-00-0224.wav"></audio></td>
-        <td><video controls width="200" src="raw/samples/comparsion/video/BossBaby-00-0224.mp4"></video></td>
+        <td><audio controls style="width: 200px;" src="raw/samples/V2SA/bossboy/gt-cutfoff-BossBaby-00-0224-speech.wav"></audio></td>
+        <td><video controls width="200" src="raw/samples/V2SA/bossboy/gt-BossBaby-00-0224-cutoff.mp4"></video></td>
         <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/BossBaby-00-0224.mp4"></video></td>
         <!-- <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td>-->
-        <td><video controls width="200" src="raw/samples/V2SA/bossboy/BossBaby-00-0224-dualdub.mp4"></video></td>
+        <td><video controls width="200" src="raw/samples/V2SA/bossboy/dualdub-BossBaby-00-0224-cutoff.mp4"></video></td>
       </tr> 
 
 
@@ -160,7 +160,7 @@
         <td><video controls width="200" src="raw/samples/comparsion/video/Elsa-00-0985.mp4"></video></td>
         <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/Elsa-00-0985.mp4"></video></td>
         <!-- <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td>-->
-        <td><video controls width="200" src="raw/samples/V2SA/ice-queen/Elsa-00-0985-dualdub.mp4"></video></td>
+        <td><video controls width="200" src="raw/samples/V2SA/ice-queen/Elsa-00-0985-dualdub-0417-as.mp4"></video></td>
       </tr> 
     `;
       
@@ -168,89 +168,45 @@
 
 
 
-
-
-
-
-
-
     sample_data =`
       <tr>
-        <th>text</th>
-        <th>reference speaker</th>
+        <!-- <th>text</th> -->
+        <!-- <th>reference speaker</th> -->
         <th>video</th>
-        <th>MMAudio+speaker2dubber</th>
+        <th>MMAudio</th>
         <!-- <th>Diffoly+style2dubber</th>-->
         <th>DualDub</th>
       </tr>
 
-     <tr>
-        <td>in the car right now on my way to the office to fax them to you</td>
-        <td><audio controls style="width: 200px;"  src="raw/samples/comparsion/groundtruth_speech/AIMcW-00-0583.wav"></audio></td>
-        <td><video controls width="200" src="raw/samples/comparsion/video/AIMcW-00-0583.mp4"></video></td>
-        <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/AIMcW-00-0583.mp4"></video></td>
-        <!-- <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td> -->
-        <td><video controls width="200" src="raw/samples/V2S/AIMcW-00-0583-dualdub.mp4"></video></td>
-      </tr> 
 
-
-           <tr>
-        <td>She promised me we'd do this together</td>
-        <td><audio controls style="width: 200px;" src="raw/samples/comparsion/groundtruth_speech/Anna-00-1036.wav"></audio></td>
-        <td><video controls width="200" src="raw/samples/comparsion/video/Anna-00-1036.mp4"></video></td>
-        <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/Anna-00-1036.mp4"></video></td>
-        <!-- <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td>-->
-        <td><video controls width="200" src="raw/samples/V2SA/disney/Anna-00-1036-dualdub.mp4"></video></td>
-      </tr> 
-
-
-           <tr>
-        <td>If you so much as touch us Hiccup is gonna kick</td>
-        <td><audio controls style="width: 200px;" src="raw/samples/comparsion/groundtruth_speech/AstridHofferson-00-0680.wav"></audio></td>
-        <td><video controls width="200" src="raw/samples/comparsion/video/AstridHofferson-00-0680.mp4"></video></td>
-        <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/AstridHofferson-00-0680.mp4"></video></td>
-        <!-- <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/AstridHofferson-00-0680.mp4"></video></td>
-        <td><video controls width="200" src="raw/samples/V2SA/ragon/AstridHofferson-00-0680-dualdub.mp4"></video></td>
-      </tr> 
-
-
-           <tr>
-        <td>Are you kidding I'm not missing one</td>
-        <td><audio controls style="width: 200px;" src="raw/samples/comparsion/groundtruth_speech/Bill-00-1575.wav"></audio></td>
-        <td><video controls width="200" src="raw/samples/comparsion/video/Bill-00-1575.mp4"></video></td>
-        <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/Bill-00-1575.mp4"></video></td>
-        <!-- <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td>-->
-        <td><video controls width="200" src="raw/samples/V2A/raw/samples/V2S/Bill-00-1575-dualdub.mp4"></video></td>
-      </tr> 
-
-
-           <tr>
-        <td>Ready Violet</td>
-        <td><audio controls style="width: 200px;" src="raw/samples/comparsion/groundtruth_speech/Bob-00-1059.wav"></audio></td>
+      
+      <tr>
+        <!-- <td>-----</td> -->
+        <!-- <td>-----</td> -->
         <td><video controls width="200" src="raw/samples/comparsion/video/Bob-00-1059.mp4"></video></td>
-        <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/Bob-00-1059.mp4"></video></td>
+        <td><video controls width="200" src="raw/samples/comparsion/video-mmaudio-largev3/Bob-00-1059.mp4"></video></td>
         <!-- <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td>-->
         <td><video controls width="200" src="raw/samples/V2A/raw/samples/V2A/Bob-00-1059-dualdub.mp4"></video></td>
       </tr> 
 
 
       <tr>
-        <td>With your track record</td>
-        <td><audio controls style="width: 200px;" src="raw/samples/comparsion/groundtruth_speech/BossBaby-00-0224.wav"></audio></td>
-        <td><video controls width="200" src="raw/samples/comparsion/video/BossBaby-00-0224.mp4"></video></td>
-        <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/BossBaby-00-0224.mp4"></video></td>
-        <!-- <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td>-->
-        <td><video controls width="200" src="raw/samples/V2SA/bossboy/BossBaby-00-0224-dualdub.mp4"></video></td>
+        <td><video controls width="200" src="raw/samples/comparsion/video/Elsa-00-0985.mp4"></video></td>
+        <td><video controls width="200" src="raw/samples/comparsion/video-mmaudio-largev3/Elsa-00-0985.mp4"></video></td>
+        <td><video controls width="200" src="raw/samples/V2SA/ice-queen/Elsa-00-0985-dualdub-0417-a.mp4"></video></td>
       </tr> 
 
 
       <tr>
-        <td>I never knew what I was capable of</td>
-        <td><audio controls style="width: 200px;" src="raw/samples/comparsion/groundtruth_speech/Elsa-00-0985.wav"></audio></td>
-        <td><video controls width="200" src="raw/samples/comparsion/video/Elsa-00-0985.mp4"></video></td>
-        <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/Elsa-00-0985.mp4"></video></td>
-        <!-- <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td>-->
-        <td><video controls width="200" src="raw/samples/V2SA/ice-queen/Elsa-00-0985-dualdub.mp4"></video></td>
+        <td><video controls width="200" src="raw/samples/comparsion/video/Anna-00-1036.mp4"></video></td>
+        <td><video controls width="200" src="raw/samples/comparsion/mmaudio-largev3/Anna-00-1036.wav"></video></td>
+        <td><video controls width="200" src="-------------"></video></td>
+      </tr> 
+
+      <tr>
+        <td><video controls width="200" src="raw/samples/comparsion/video/AstridHofferson-00-0680.mp4"></video></td>
+        <td><video controls width="200" src="raw/samples/comparsion/mmaudio-largev3/AstridHofferson-00-0680.wav"></video></td>
+        <td><video controls width="200" src="---------------"></video></td>
       </tr> 
     `;
       
@@ -263,42 +219,12 @@
         <th>text</th>
         <th>reference speaker</th>
         <th>video</th>
-        <th>MMAudio+speaker2dubber</th>
+        <th>Speaker2dubber</th>
         <!-- <th>Diffoly+style2dubber</th>-->
         <th>DualDub</th>
       </tr>
 
-     <tr>
-        <td>in the car right now on my way to the office to fax them to you</td>
-        <td><audio controls style="width: 200px;"  src="raw/samples/comparsion/groundtruth_speech/AIMcW-00-0583.wav"></audio></td>
-        <td><video controls width="200" src="raw/samples/comparsion/video/AIMcW-00-0583.mp4"></video></td>
-        <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/AIMcW-00-0583.mp4"></video></td>
-        <!-- <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td> -->
-        <td><video controls width="200" src="raw/samples/V2S/AIMcW-00-0583-dualdub.mp4"></video></td>
-      </tr> 
-
-
-           <tr>
-        <td>She promised me we'd do this together</td>
-        <td><audio controls style="width: 200px;" src="raw/samples/comparsion/groundtruth_speech/Anna-00-1036.wav"></audio></td>
-        <td><video controls width="200" src="raw/samples/comparsion/video/Anna-00-1036.mp4"></video></td>
-        <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/Anna-00-1036.mp4"></video></td>
-        <!-- <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td>-->
-        <td><video controls width="200" src="raw/samples/V2SA/disney/Anna-00-1036-dualdub.mp4"></video></td>
-      </tr> 
-
-
-           <tr>
-        <td>If you so much as touch us Hiccup is gonna kick</td>
-        <td><audio controls style="width: 200px;" src="raw/samples/comparsion/groundtruth_speech/AstridHofferson-00-0680.wav"></audio></td>
-        <td><video controls width="200" src="raw/samples/comparsion/video/AstridHofferson-00-0680.mp4"></video></td>
-        <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/AstridHofferson-00-0680.mp4"></video></td>
-        <!-- <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/AstridHofferson-00-0680.mp4"></video></td>
-        <td><video controls width="200" src="raw/samples/V2SA/ragon/AstridHofferson-00-0680-dualdub.mp4"></video></td>
-      </tr> 
-
-
-           <tr>
+      <tr>
         <td>Are you kidding I'm not missing one</td>
         <td><audio controls style="width: 200px;" src="raw/samples/comparsion/groundtruth_speech/Bill-00-1575.wav"></audio></td>
         <td><video controls width="200" src="raw/samples/comparsion/video/Bill-00-1575.mp4"></video></td>
@@ -308,34 +234,22 @@
       </tr> 
 
 
-           <tr>
-        <td>Ready Violet</td>
-        <td><audio controls style="width: 200px;" src="raw/samples/comparsion/groundtruth_speech/Bob-00-1059.wav"></audio></td>
-        <td><video controls width="200" src="raw/samples/comparsion/video/Bob-00-1059.mp4"></video></td>
-        <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/Bob-00-1059.mp4"></video></td>
-        <!-- <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td>-->
-        <td><video controls width="200" src="raw/samples/V2A/raw/samples/V2A/Bob-00-1059-dualdub.mp4"></video></td>
+        <tr>
+        <td>in the car right now on my way to the office to fax them to you</td>
+        <td><audio controls style="width: 200px;" src="raw/samples/V2S/gtspeech-AIMcW-00-0583.wav"></audio></td>
+        <td><video controls width="200" src="raw/samples/comparsion/video/AIMcW-00-0583.mp4"></video></td>
+        <td><video controls width="200" src="raw/samples/comparsion/video-s2dubber/AIMcW-00-0583.mp4"></video></td>
+        <td><video controls width="200" src="raw/samples/V2S/AIMcW-00-0583-dualdub.mp4"></video></td>
       </tr> 
-
-
-      <tr>
-        <td>With your track record</td>
-        <td><audio controls style="width: 200px;" src="raw/samples/comparsion/groundtruth_speech/BossBaby-00-0224.wav"></audio></td>
-        <td><video controls width="200" src="raw/samples/comparsion/video/BossBaby-00-0224.mp4"></video></td>
-        <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/BossBaby-00-0224.mp4"></video></td>
-        <!-- <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td>-->
-        <td><video controls width="200" src="raw/samples/V2SA/bossboy/BossBaby-00-0224-dualdub.mp4"></video></td>
-      </tr> 
-
 
       <tr>
         <td>I never knew what I was capable of</td>
         <td><audio controls style="width: 200px;" src="raw/samples/comparsion/groundtruth_speech/Elsa-00-0985.wav"></audio></td>
         <td><video controls width="200" src="raw/samples/comparsion/video/Elsa-00-0985.mp4"></video></td>
-        <td><video controls width="200" src="raw/samples/comparsion/mmaudio+s2d/Elsa-00-0985.mp4"></video></td>
-        <!-- <td><video controls width="200" src="raw/samples/V2A/Bob-00-1059.mp4"></video></td>-->
-        <td><video controls width="200" src="raw/samples/V2SA/ice-queen/Elsa-00-0985-dualdub.mp4"></video></td>
+        <td><video controls width="200" src="raw/samples/comparsion/video-s2dubber/Elsa-00-0985.mp4"></video></td>
+        <td><video controls width="200" src="raw/samples/V2SA/ice-queen/Elsa-00-0985-dualdub-0417-speech.mp4"></video></td>
       </tr> 
+
     `;
       
     document.getElementById('v2s-body').innerHTML = sample_data
